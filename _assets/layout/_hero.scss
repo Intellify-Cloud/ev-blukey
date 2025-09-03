@@ -1,0 +1,186 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url("#{$header-image}");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 65vh;
+  min-height: 65vh;
+  overflow: hidden;
+
+  // Dark overlay for readability
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  // Intro text centered using golden ratio for desktop
+  .intro-text {
+    position: absolute;
+    top: 61.8%;
+    left: 50%;
+    transform: translate(-50%, -38.2%);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    color: white;
+
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      @include serif-font;
+      color: white;
+    }
+
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      @include heading-font;
+      color: white;
+    }
+  }
+
+  // === Desktop: Extra Large Screens (≥1200px) ===
+  @media (min-width: 1200px) {
+    height: 65vh;
+  }
+
+  // === Desktop: Large Screens (≥992px) ===
+  @media (min-width: 992px) {
+    height: 65vh;
+
+    .intro-text {
+      .intro-lead-in {
+        font-size: 44px;
+        line-height: 44px;
+      }
+
+      .intro-heading {
+        font-size: 70px;
+        line-height: 70px;
+      }
+    }
+  }
+
+  // === Desktop: Medium Screens (≥768px) ===
+  @media (min-width: 768px) {
+    height: 65vh;
+
+    .intro-text {
+      .intro-lead-in {
+        font-size: 36px;
+        line-height: 38px;
+      }
+
+      .intro-heading {
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  // === Tablet and Small Desktop: (≤767.98px) ===
+  @media (max-width: 767.98px) {
+    height: 70vh;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .intro-text {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      z-index: 3;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 1rem;
+      text-align: center;
+      margin: 0 auto;
+
+      .intro-lead-in {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+        color: #fff;
+      }
+
+      .intro-heading {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        color: #fff;
+      }
+    }
+  }
+
+  // === Small Mobile Devices: (≤480px) ===
+  @media (max-width: 480px) {
+    height: 70vh;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .intro-text {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      z-index: 3;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 1rem;
+      text-align: center;
+      margin: 0 auto;
+
+      .intro-lead-in {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+
+      .intro-heading {
+        font-size: 34px;
+        line-height: 34px;
+        // margin-bottom: 15px;
+      }
+    }
+  }
+}

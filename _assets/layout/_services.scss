@@ -1,0 +1,143 @@
+/* Modernized Variables */
+:root {
+  // Brand Colors
+  --bg-color: #20454D; // A dark, rich blue background
+  --accent-color: #B59D4A; // A complementary golden hue for accents and links
+  --card-bg-color: #F8F9FA; // A very light gray for card backgrounds
+  
+  // Text Colors
+  --text-dark: #2d3748; // Dark text for light backgrounds
+  --text-light: #ffffff; // White text for dark backgrounds
+  --text-muted: #64748b; // Muted gray for secondary text
+}
+
+/* Services Section Styling */
+.services-section {
+  padding: 5rem 0;
+  background-color: var(--bg-color); // Uses the main background variable
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .section-heading {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light); // Optimized for contrast against dark background
+    letter-spacing: 2px;
+  }
+
+  .section-subheading {
+    font-size: 1.2rem;
+    color: var(--accent-color); // Uses the accent color
+    max-width: 600px;
+    margin: 0 auto 4rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-muted {
+    color: var(--text-muted); // Uses the muted text color variable
+  }
+}
+
+/* Simple Services Grid */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Service Cards - SIMPLE VERSION */
+.card {
+  background: var(--card-bg-color); // Consistent, light background for cards
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Card Body - SIMPLE FLEX */
+.card-body {
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+/* Icon Styling */
+.fa-stack {
+  margin-bottom: 2rem;
+}
+
+.fa-stack-2x {
+  background-color: var(--accent-color); // Uses the main accent color
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.fa-stack-1x {
+  font-size: 2rem;
+  color: var(--text-light); // Optimized for contrast against the accent color
+}
+
+/* Card Content */
+.service-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark); // Optimized for contrast against the light card background
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-description {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+/* Service Button */
+.btn {
+  //background-color: $accent-color; // Use Sass variable here
+  color: var(--text-light); // Optimized for contrast
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: auto;
+
+  &:hover {
+    //background-color: darken($accent-color, 10%); // Sass can now use the variable
+    transform: translateY(-1px);
+    color: var(--text-light);
+    text-decoration: none;
+  }
+}

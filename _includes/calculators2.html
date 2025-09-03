@@ -1,0 +1,42 @@
+<!-- More Calculators -->
+<section class="calculators-section calculators-section--secondary bg-light id="{{ site.data.sitetext.more-calculators.section | default: 'calculators2' }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">
+                    {{ site.data.sitetext.more-calculators.title | default: "More Calculators" }}
+                </h2>
+                {% if site.data.sitetext.more-calculators.text %}
+                <h3 class="section-subheading text-muted">{{ site.data.sitetext.more-calculators.text }}</h3>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="calculators-grid">
+            {% for service in site.data.sitetext.more-calculators.list %}
+            <div class="calculator-card">
+                <div class="card-body">
+                    <div class="icon-wrapper">
+                        <div class="icon-bg">
+                            <i class="{{ service.icon | default: "fas fa-calculator" }} card-icon"></i>
+                        </div>
+                    </div>
+                    <h4 class="card-title">{{ service.title | markdownify }}</h4>
+                    {% if service.desc %}
+                    <div class="card-description">{{ service.desc | markdownify }}</div>
+                    {% endif %}
+                </div>
+                {% if service.link %}
+                <div class="card-footer">
+                    <a href="{{ service.link.url }}" class="btn btn-textblock-lite" role="button">
+                        <i class="fas fa-arrow-right"></i>
+                        {{ service.link.text }}
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End More Calculators -->

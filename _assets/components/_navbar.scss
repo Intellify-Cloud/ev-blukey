@@ -1,0 +1,92 @@
+// Navbar Styling
+#mainNav {
+  background-color: #20454d;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); // Drop shadow added here
+
+
+  .navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    @include script-font;
+
+    img {
+      height: 70px;
+      margin-right: 0.5rem;
+      padding: 5px;
+    }
+
+    &:hover,
+    &:focus {
+      color: darken($primary, 10%);
+    }
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    @include heading-font;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        color: #b59d4a; // Change To Update the Nav Font Color
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @include heading-font;
+
+        &:hover,
+        &:focus, 
+        &.active {
+          color: #fff; // Change To Update the Nav On Hover Font Color
+        }
+      }
+    }
+  }
+
+  &.navbar-shrink {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    .navbar-brand {
+      font-size: 1.5rem;
+
+      img {
+        height: 70px;
+        padding: 7px;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 991.98px) {
+  #mainNav {
+    .navbar-nav {
+      .nav-link {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
