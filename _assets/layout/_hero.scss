@@ -8,8 +8,8 @@ header.masthead {
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 65vh;
-  min-height: 65vh;
+  height: 80vh;
+  min-height: 80vh;
   overflow: hidden;
 
   // Dark overlay for readability
@@ -59,12 +59,12 @@ header.masthead {
 
   // === Desktop: Extra Large Screens (≥1200px) ===
   @media (min-width: 1200px) {
-    height: 65vh;
+    height: 80vh;
   }
 
   // === Desktop: Large Screens (≥992px) ===
   @media (min-width: 992px) {
-    height: 65vh;
+    height: 80vh;
 
     .intro-text {
       .intro-lead-in {
@@ -81,7 +81,7 @@ header.masthead {
 
   // === Desktop: Medium Screens (≥768px) ===
   @media (min-width: 768px) {
-    height: 65vh;
+    height: 80vh;
 
     .intro-text {
       .intro-lead-in {

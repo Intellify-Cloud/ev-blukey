@@ -1,6 +1,6 @@
 header:
     title: ""
-    text: "Need a homeloan?"
+    text: "Coming Soon!"
 
 services:
     title: "Services We Offer"
@@ -254,14 +254,14 @@ contact:
 footer:
     legal: "Powered by evo Homeloans"
     social:
-      - url: https://twitter.com/chanelle_macey
-        icon: "fab fa-twitter"  
-      - url: https://www.facebook.com/chanellehomeloan
+      - url: https://www.instagram.com/bluekeyhomefinancepoweredbyevo/
+        icon: "fab fa-instagram"  
+      - url: https://www.facebook.com/profile.php?id=61580109487431
         icon: "fab fa-facebook-f"
-      - url: https://za.linkedin.com/in/chanelle-macey-homeloans
+      - url: https://www.linkedin.com/company/blue-key-home-finance-%E2%80%93-powered-by-evo/
         icon: "fab fa-linkedin-in"
-      - url: https://api.whatsapp.com/send?phone=27795620507
-        icon: "fab fa-whatsapp"
+      #- url: https://api.whatsapp.com/send?phone=27795620507
+      #  icon: "fab fa-whatsapp"
       # - url: https://instagram.com
       #   icon: "fab fa-instagram"
 

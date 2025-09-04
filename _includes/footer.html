@@ -7,26 +7,27 @@
         </div>
         <!-- Social Media -->
         <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            {% for link in site.data.sitetext.footer.social  %}
-            <li class="list-inline-item">
-              {% if link.url %}
-              <a href="{{ link.url }}">
-                {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-              </a>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-          <a href="/privacy-statement" target="_blank">Privacy Statement | </a><a href="/data-sharing-agreement"
-            target="_blank">Data Sharing</a>
+            <ul class="list-inline social-buttons">
+              {% for link in site.data.sitetext.footer.social %}
+              <li class="list-inline-item">
+                {% if link.url %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+                </a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+
+          <!-- <a href="/privacy-statement" target="_blank">Privacy Statement | </a><a href="/data-sharing-agreement"
+            target="_blank">Data Sharing</a> -->
         </div>
 
         <!-- Legal -->
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
-              <a href="https://evohomeloans.co.za/bond-originator/uncategorized/chanelle-macey-evo-home-loans/"
+              <a href="https://evohomeloans.co.za/bond-originator/"
                 target="_blank">{{ site.data.sitetext.footer.legal | default: "" }}</a>
             </li>
           </ul>
@@ -50,10 +51,10 @@
   </script>
   {% endif %}
 
-  <div class="whatsapp">
+  <!-- <div class="whatsapp">
     <a href="https://api.whatsapp.com/send?phone=27795620507" target="_blank">
       <h4><i class="fab fa-whatsapp fa-2x " aria-hidden="true"></i></h4>Chat
-    </a>
+    </a> -->
     <!-- <a href="https://api.whatsapp.com/send?phone=15551234567">Send Message</a> -->
-  </div>
+  <!-- </div> -->
   <!-- End Footer -->
