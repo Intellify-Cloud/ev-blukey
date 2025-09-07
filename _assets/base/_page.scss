@@ -14,7 +14,7 @@
     //font-style: italic;
     margin-bottom: 3em;
     text-transform: none;
-    font-family: 'Comfortaa', serif; // Direct replacement
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   }
 }
 
@@ -143,7 +143,7 @@ img::selection {
 // Responsive Typography for Headings
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  font-family: 'Comfortaa', Arial, sans-serif; 
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.2;
   margin-bottom: 0.618em; // Golden ratio spacing
 }
@@ -280,6 +280,6 @@ h6 {
     font-weight: 400;
     margin-bottom: 3em;
     text-transform: none;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   }
 }

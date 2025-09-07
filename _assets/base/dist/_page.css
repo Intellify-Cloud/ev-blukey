@@ -10,7 +10,7 @@
   font-weight: 400;
   margin-bottom: 3em;
   text-transform: none;
-  font-family: "Comfortaa", serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -125,7 +125,7 @@ img::selection {
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  font-family: "Comfortaa", Arial, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.2;
   margin-bottom: 0.618em;
 }
@@ -250,5 +250,5 @@ h6 {
   font-weight: 400;
   margin-bottom: 3em;
   text-transform: none;
-  font-family: "Comfortaa", cursive;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
