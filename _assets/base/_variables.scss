@@ -1,11 +1,4 @@
 // Variables
-$body-bg: #20454D !default;   // your background hex
-$body-color: #ffffff !default; // text colour (white for contrast)
-// Define the base link color
-$link-color: #b59d4a !default; // Make sure this is a valid color
-
-// Define the hover color using the base color
-$link-hover-color: darken($link-color, 15%) !default;
 
 // Restated Bootstrap Variables
 $gray-100: #f8f9fa !default;
@@ -17,3 +10,4 @@ $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+

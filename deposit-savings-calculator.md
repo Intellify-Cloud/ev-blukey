@@ -9,5 +9,3 @@ background: white
         src="https://www.ooba.co.za/calculators/home-loan-deposit-saving-calculator/?iframe=true&iftype=evogroup"
         title="Deposit Savings Calculator"></iframe>
 </div>
-
-{% include team.html %}

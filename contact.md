@@ -1,29 +1,29 @@
 ---
 layout: page
-title: evo Everywhere
-background: grey
+title: Blue Key Home Finance
+background: gray
 ---
 
 <div class="container contact-us py-5">
+
   <div class="row justify-content-center">
-    <div class="col-md-8 text-center">
-      <h2 class="section-heading text-uppercase">Contact evo Everywhere</h2>
-      <br>
-      <h4>Contact</h4>
-      <p>Cell: <a href="tel:+27795620507">079 562 0507</a></p>
-	  <p>WhatsApp: <a href="https://wa.me/27795620507" target="_blank">Message me</a></p>
-      <p>Email: <a href="mailto:chanelle.macey@evogroup.co.za?subject=Mail from evo Website">chanelle.macey@evogroup.co.za</a></p>
-      <br>
-      <h4>Address</h4>
-      <p>275 Peter Mokaba Road</p>
-      <p>Morningside</p>
-      <p>Durban</p>
-      <p>4001</p>
-    </div>
-	<!-- Include team section if needed -->
-  <div class="row justify-content-center mt-5">
-    <div class="col-lg text-center w-100">
-      {% include team.html %}
-    </div>
+    <div class="col-md text-center" style="max-width: 500px;">
+      <h2 class="section-heading text-uppercase">Contact Us</h2>
+      <h3>Zelda Weaver</h3>
+      <p>Call: <a href="tel:+27825190947">083 676 0912</a></p>
+      <p>WhatsApp: <a href="https://wa.me/27825190947" target="_blank">Message me</a></p>
+      <p>Email: <a href="mailto:zelda.weaver@evogroup.co.za?subject=Mail from Blue Key Website">zelda.weaver@evogroup.co.za</a></p>
+      <p>Midlands</p>
+      <p>Kwa-Zulu Natal</p>
+      </div>
   </div>
+
+  <!-- Separate row for General Enquiries -->
+  <!-- <div class="row justify-content-center mt-4">
+    <div class="col-lg text-center w-100" style="max-width: 1000px;">
+      <h3>National Enquiries</h3>
+      <p>Email: <a href="mailto:zelda.weaver@evogroup.co.za?subject=National Enquiries Mail from Evo Website">zelda.weaver@evogroup.co.za</a></p>
+    </div>
+  </div> -->
+
 </div>

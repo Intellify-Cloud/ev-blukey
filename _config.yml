@@ -1,12 +1,12 @@
 baseurl: ""
 
 title      : Blue Key Home Finance - Expert in Bond Origination & Home Loans in the KZN Midlands
-email      : chanelle.macey@evogroup.co.za
+email      : zelda.weaver@evogroup.co.za
 description: "Looking for expert help with your home loan? Contact Renata at Blue Key Home Finance — your trusted partner in property finance. We are experienced home loan specialists dedicated to guiding you through every step of the bond and mortgage origination process. With deep knowledge of the property industry, we focus on securing the best home loans, property finance solutions, and bond approvals. At Blue Key Home Finance, we are passionate about helping clients achieve their property goals while delivering excellence and building lasting relationships."
-author     : Pieter Oosthuizen
+author: Eben Roux / Pieter Oosthuizen
 
 analytics:
-  google: G-xxx
+  google: G-XXX
 
 collections:
   portfolio:
@@ -22,12 +22,12 @@ webserver_headers:
 logo:
   path: /assets/img/logo/blue-key-home-finance-logo.jpg
 
-exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
+exclude: [node_modules, webpack-config.js, package.json, package-lock.json]
 
-group: evo Homeloans
+group: Blue Key Home Finance
 
 company: Blue Key Home Finance
 
-url: https://evohomeloans.co.za/bond-originators/durban/
+url: https://evohomeloans.co.za
 
-address: 000 STREET_NAME , SUBURB, HOWICK, 0000
+address: KwaZulu-Natal Address, Midlands,

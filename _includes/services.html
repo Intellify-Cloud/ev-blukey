@@ -1,26 +1,41 @@
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="section-heading">{{ site.data.sitetext.services.title }}</h2>
-      {% if site.data.sitetext.services.text %}
-      <p class="section-subheading">{{ site.data.sitetext.services.text }}</p>
-      {% endif %}
-    </div>
+<!-- Services -->
+  <section class="page-section py-5" id="{{ site.data.sitetext.services.section | default: "services" }}">
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.services.title | default: "Services We Offer" }}</h2>
 
-    <div class="services">
-      {% for service in site.data.sitetext.services.list %}
-      <div class="card">
-        <div class="card-body">
-          <h4 class="service-heading">{{ service.title }}</h4>
-          {% if service.desc %}
-          <p class="service-description">{{ service.desc }}</p>
-          {% endif %}
-          {% if service.link %}
-          <a href="{{ service.link.url | default: '#' }}" class="btn">{{ service.link.text }}</a>
-          {% endif %}
+          {% if site.data.sitetext.services.text %}
+          
+		  <h3 class="section-subheading text-muted">{{ site.data.sitetext.services.text }}</h3>
+		  {% endif %}
         </div>
       </div>
-      {% endfor %}
+	  
+      <div class="card-deck services">
+        
+	  {% for service in site.data.sitetext.services.list %}
+        <div class="card">
+          <div class="card-body text-center">
+            <!-- <span class="fa-stack fa-3x">
+              <i class="fas fa-circle fa-stack-2x "></i>
+              <i class="{{ service.icon | default: "" }} fa-stack-1x fa-inverse"></i>
+            </span> -->
+            <h4 class="card-title service-heading">{{ service.title | markdownify }}</h4>
+            {% if service.desc %}
+            <div class="text-muted">{{ service.desc | markdownify }}</div>
+            {% endif %}
+          </div>
+          {% if service.link %}
+          <div class="card-footer text-center">
+            <a href="{{ service.link.url }}" class="btn btn-outline-primary btn-xl text-uppercase shadow" >{{ service.link.text }}</a>
+          </div>
+          {% endif %}
+        </div>
+	  {% endfor %}
+      </div>
+	  
     </div>
-  </div>
-</section>
+  </section>
+<!-- End Services -->
