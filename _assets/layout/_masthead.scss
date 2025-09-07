@@ -2,7 +2,7 @@
 header.hero {
   text-align: center;
   color: #ffffff; // White text for contrast
-  background: linear-gradient(135deg, rgba(14, 31, 34, 0.95) 0%, rgba(28, 61, 68, 0.9) 10%, rgba(14, 31, 34, 0.95) 100%), 
+  background: linear-gradient(135deg, rgba(14, 31, 34, 0.733) 0%, rgba(28, 61, 68, 0.664) 10%, rgba(14, 31, 34, 0.61) 100%), 
     url("#{$header-image}"); // Dark teal gradient overlay
   background-repeat: no-repeat;
   background-position: center center;
@@ -11,7 +11,7 @@ header.hero {
   display: flex;
   align-items: center; // Changed to center for better alignment
   justify-content: center;
-  height: 100vh; // Full viewport height for impact
+  height: 80vh; // Full viewport height for impact
   width: 100%;
   padding: 0;
   position: relative;
