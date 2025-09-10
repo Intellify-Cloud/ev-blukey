@@ -12,9 +12,9 @@ background: gray
       <h3>Zelda Weaver</h3>
       <p>Call: <a href="tel:+27825190947">083 676 0912</a></p>
       <p>WhatsApp: <a href="https://wa.me/27825190947" target="_blank">Message me</a></p>
-      <p>Email: <a href="mailto:zelda.weaver@evogroup.co.za?subject=Mail from Blue Key Website">zelda.weaver@evogroup.co.za</a></p>
-      <p>Midlands</p>
-      <p>Kwa-Zulu Natal</p>
+      <p>Email: <a href="mailto:bluekeyfinance@evogroup.co.za?subject=Mail from Blue Key Website">bluekeyfinance@evogroup.co.za</a></p>
+      <p></p>
+      
       </div>
   </div>
 
