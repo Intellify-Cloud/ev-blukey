@@ -73,15 +73,7 @@ header.hero {
     border: none;
     box-shadow: 0 8px 18px rgba(255, 228, 77, 0.25);
 
-    &:hover {
-      background: linear-gradient(135deg, #FFF176 0%, #FFE44D 100%);
-      transform: none;
-      box-shadow: 0 8px 18px rgba(255, 228, 77, 0.35);
-    }
 
-    &:active {
-      transform: none;
-    }
   }
 
   .scroll-indicator {
