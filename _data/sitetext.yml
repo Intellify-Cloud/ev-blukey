@@ -20,7 +20,7 @@ services:
         url: /contact
         text: "Contact Us"
     - title: "Bond Origination"
-      desc: "We negotiate the best terms and interest."
+      desc: "We negotiate the best terms and interest rate on your behalf."
       icon: fas fas fa-home
       link:
         url: /contact
