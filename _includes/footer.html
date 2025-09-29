@@ -26,11 +26,13 @@
       <!-- Legal -->
       <div class="footer-section footer-section--end">
         <ul class="quicklinks">
-          <li>
-            <a href="https://evohomeloans.co.za/bond-originator/" target="_blank">
-              {{ site.data.sitetext.footer.legal | default: "" }}
-            </a>
-          </li>
+                      {% if site.data.sitetext.footer.legal %}
+              <li class="list-inline-item">
+                <a href="https://evohomeloans.co.za" target="_blank" style="color: black;">
+                  {{ site.data.sitetext.footer.legal }}
+                </a>
+              </li>
+              {% endif %}
         </ul>
       </div>
     </div>
