@@ -21,7 +21,7 @@ services:
         text: "Contact Us"
     - title: "Bond Origination"
       desc: "We negotiate the best terms and interest rate on your behalf."
-      icon: fas fas fa-home
+      icon: fas fa-home
       link:
         url: /contact
         text: "Contact Us"
@@ -100,9 +100,9 @@ textblock:
         image: "fas fa-circle"
       - title: "<strong>Step 4: Strategic Application</strong> – We apply to our panel of lenders, including your bank, to create competition."
         image: "fas fa-circle"
-      - title: "<strong>Step 6: Select & Secure</strong> – You choose the winning offer, empowered with clarity and expert advice."
+      - title: "<strong>Step 5: Select & Secure</strong> – You choose the winning offer, empowered with clarity and expert advice."
         image: "fas fa-circle"
-      - title: "<strong>Step 7: Choose</strong> - You select the best home-loan offer."
+      - title: "<strong>Step 6: Move Forward</strong> - Your selected lender starts the bond registration process."
         image: "fas fa-circle"
 
 portfolio:
@@ -156,7 +156,7 @@ clients:
     - title: "Standard Bank"
       url: https://www.standardbank.co.za/
       logo: assets/img/clients/SBSA-bw.png
-    - title: "Sentinal Homes"
+    - title: "Sentinel Homes"
       url: https://www.sentinelhomes.co.za/
       logo: assets/img/clients/sentinal-homes.png
 
