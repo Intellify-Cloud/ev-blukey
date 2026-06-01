@@ -16,36 +16,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="{{ site.title }}">
   <meta name="description" content="{{ site.description }}">
+  <meta name="robots" content="index, follow">
   <!-- Primary Meta Tags -->
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.baseurl }}">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.baseurl }}/social_916x509.jpg">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ site.url }}/social_916x509.jpg">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ site.baseurl }}">
-  <meta property="twitter:title" content="{{ site.title }}">
-  <meta property="twitter:description" content="{{ site.description }}">
-  <meta property="twitter:image" content="{{ site.baseurl }}/social_916x509.jpg">
+  <meta property="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta property="twitter:image" content="{{ site.url }}/social_916x509.jpg">
+  <meta property="twitter:site" content="@BlueKeyHomeFin">
 
 
   <meta name="author" content="{{ site.author }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
 
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
-  <link rel="stylesheet" href="{{ site.baseurl | append: "/assets/bundle.css" | relative_url }}">
+  <link rel="icon" href="{{ site.url }}/favicon.png" type="image/png">
+  <link rel="stylesheet" href="{{ "/assets/bundle.css" | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
-  <link rel="stylesheet" href="{{ site.baseurl | append: "/assets/bundle.css" | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" type="text/css">
 
   <script src="{{ site.baseurl | append: "/assets/bundle.js" | relative_url }}"></script>
