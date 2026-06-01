@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Privacy Policy
+description: "Read the Blue Key Home Finance privacy policy and how personal information is collected, used, and protected."
+permalink: /legal/
 background: grey
 ---
 <div class="col-lg-12 text-center">

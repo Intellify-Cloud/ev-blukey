@@ -20,6 +20,7 @@ module.exports = {
     entry: './_assets/bundle.js',
     output: {
         filename: 'bundle.js',
+        assetModuleFilename: 'generated/[hash][ext][query]',
         path: path.resolve(__dirname, 'assets')
     },
     module: {

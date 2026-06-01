@@ -17,19 +17,19 @@ services:
       desc: "Know what you qualify for, we calculate affordability and verify credit checks."
       icon: fas fa-tasks
       link:
-        url: /contact
+        url: /contact/
         text: "Contact Us"
     - title: "Bond Origination"
       desc: "We negotiate the best terms and interest rate on your behalf."
       icon: fas fa-home
       link:
-        url: /contact
+        url: /contact/
         text: "Contact Us"
     - title: "Advice and Guidance"
       desc: "Support through every step."
       icon: fas fa-shield-alt
       link:
-        url: /contact
+        url: /contact/
         text: "Contact Us"
 
 articles:
@@ -46,19 +46,19 @@ calculators:
       desc: "Calculate the home loan you qualify for."
       icon: fas fa-calculator
       link:
-        url: /affordability-calculator
+        url: /affordability-calculator/
         text: "Calculate"
     - title: "Repayment Calculator"
       desc: "Calculate your monthly bond repayments."
       icon: fas fa-calculator
       link:
-        url: /bond-calculator
+        url: /bond-calculator/
         text: "Calculate"
     - title: "Transfer Cost Calculator"
       desc: "Calculate your registration and transfer costs."
       icon: fas fa-calculator
       link:
-        url: /transfer-cost-calculator
+        url: /transfer-cost-calculator/
         text: "Calculate"
 
 more-calculators:
@@ -70,20 +70,20 @@ more-calculators:
       desc: "Calculate how your repayment is structured."
       icon: fas fa-calculator
       link:
-        url: /amortisation-calculator
+        url: /amortisation-calculator/
         text: "Calculate"
 
     - title: "Deposit Savings Calculator"
       desc: "Calculate how much you need to save for your deposit."
       icon: fas fa-calculator
       link:
-        url: /deposit-savings-calculator
+        url: /deposit-savings-calculator/
         text: "Calculate"
     - title: "Additional Payment Calculator"
       desc: "Calculate your savings on your total home loan cost by paying a little extra into your bond."
       icon: fas fa-calculator
       link:
-        url: /additional-payment-calculator
+        url: /additional-payment-calculator/
         text: "Calculate"
 
 textblock:
@@ -171,9 +171,9 @@ team:
       role: "Property Finance Specialist"
       image: assets/img/team/Amanda-Strydom-Blue Key Home Finance.jpg
       social:
-        - url: tel:082 414 1865
+        - url: tel:+27825190947
           icon: fas fa-phone
-        - url: mailto:zelda.weaver@evogroup.co.za?subject=Blue Key Home Finance Website Enquiry
+        - url: mailto:bluekeyfinance@evogroup.co.za?subject=Blue Key Home Finance Website Enquiry
           icon: fas fa-envelope
         - url: https://www.facebook.com/profile.php?id=61580109487431
           icon: fab fa-facebook-f

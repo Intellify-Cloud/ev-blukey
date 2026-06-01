@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Privacy Policy
+description: "Read the Blue Key Home Finance privacy statement, including definitions and personal information processing terms."
+permalink: /privacy-statement/
 background: grey
 ---
 <div class="col-lg-12 text-center">
@@ -110,7 +112,7 @@ We will take reasonable steps to ensure that any country, company or person that
 We may change this Privacy Statement at any time. The most updated version will always be available on {{ site.url }}.
 
 If you have any concerns 
-If you believe that we have used your personal information contrary to this Privacy Statement, you must first attempt to resolve any concerns with us.  You can do this by contacting the Information Officer at the following email address: {{ site.email }}.
+If you believe that we have used your personal information contrary to this Privacy Statement, you must first attempt to resolve any concerns with us. You can do this by contacting the Information Officer at the following email address: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 
 If you are not satisfied after this process, you have the right to lodge a complaint with the Information Regulator, under POPIA. 
 The contact details are: The Information Regulator (South Africa);

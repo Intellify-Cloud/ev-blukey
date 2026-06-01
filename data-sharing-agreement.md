@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Data Sharing
+description: "Read the Blue Key Home Finance data sharing agreement and how shared personal information is handled."
+permalink: /data-sharing-agreement/
 background: grey
 ---
 <div class="col-lg-12 text-center">
@@ -37,7 +39,7 @@ In your privacy notices with your customers (whose information you might share w
 
 We will take all reasonable steps to keep all 3rd Party personal information safe and confidential, and will comply with any undertakings given by you to the 3rd Party in regard to their personal information, alternatively, we will delete their personal information from our recorded keeping systems. 
 
-Should you receive any complaints from a 3rd Party in regard to any personal information shared with us, you will notify us as soon as reasonably possible so that we can address the complaint.  You can do so by emailing {{ site.email }} or by otherwise making contact with us.
+Should you receive any complaints from a 3rd Party in regard to any personal information shared with us, you will notify us as soon as reasonably possible so that we can address the complaint. You can do so by emailing <a href="mailto:{{ site.email }}">{{ site.email }}</a> or by otherwise making contact with us.
 
 #### Binding nature of this Data Sharing Agreement 
 Should you share a 3rd Party’s personal information with any member of {{ site.company }}, then {{ site.company }} will comply with the terms of this Data Sharing Agreement and {{ site.company }} Privacy Policy.  This undertaking is given in your favour and in favour of the 3rd Party.  The 3rd Party may rely on the undertakings given by us in terms of the {{ site.company }} Privacy Policy.  

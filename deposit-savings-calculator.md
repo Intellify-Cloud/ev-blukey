@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Deposit Savings Calculator
+description: "Work out how much you need to save for a property deposit and how long it may take to reach your goal."
+permalink: /deposit-savings-calculator/
 background: white
 ---
 

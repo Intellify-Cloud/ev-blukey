@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Bond Calculator
+description: "Calculate estimated monthly bond repayments for a home loan based on property price, deposit, term, and interest rate."
+permalink: /bond-calculator/
 background: white
 ---
 

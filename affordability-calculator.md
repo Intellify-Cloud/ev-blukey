@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Bond Affordability Calculator
+description: "Estimate how much home loan you may qualify for based on your income, expenses, and affordability."
+permalink: /affordability-calculator/
 background: white
 ---
 

@@ -1,17 +1,18 @@
 baseurl: ""
 
 title      : Blue Key Home Finance - Expert in Bond Origination & Home Loans in the KZN Midlands
-email      : mailto:bluekeyfinance@evogroup.co.za
-description: "Looking for expert help with your home loan? Contact Blue Key Home Finance — your trusted partner in property finance. We are experienced home loan specialists dedicated to guiding you through every step of the bond and mortgage origination process. With deep knowledge of the property industry, we focus on securing the best home loans, property finance solutions, and bond approvals. At Blue Key Home Finance, we are passionate about helping clients achieve their property goals while delivering excellence and building lasting relationships."
-author: Eben Roux / Pieter Oosthuizen
-
-analytics:
-  google: G-XXX
+email      : bluekeyfinance@evogroup.co.za
+phone      : "+27825190947"
+description: "Blue Key Home Finance helps home buyers in the KZN Midlands secure bond approvals, compare home loan offers, and move through property finance with trusted guidance."
+author: E Roux / Pieter Oosthuizen
 
 collections:
   portfolio:
 
 markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
 
 webserver_headers:
   - - Access-Control-Allow-Origin
@@ -28,6 +29,6 @@ group: Blue Key Home Finance
 
 company: Blue Key Home Finance
 
-url: https://evohomeloans.co.za
+url: https://www.bluekeyhomefinance.co.za
 
 address: 

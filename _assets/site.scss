@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+// Central SCSS entrypoint.
+// Import shared variables, vendor styles, components, and layouts here.
+// Webpack compiles this file into /assets/bundle.css for the HTML layout.
+
 $header-image: "./img/blue-key-home-finance-hero.jpg";
 $contact-image: "./img/contact.png";
 

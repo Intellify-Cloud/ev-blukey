@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Transfer Cost Calculator
+description: "Estimate bond registration and property transfer costs before you buy your next home."
+permalink: /transfer-cost-calculator/
 background: white
 ---
 
