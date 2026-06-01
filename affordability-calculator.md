@@ -7,7 +7,7 @@ background: white
 ---
 
 <div>
-    <iframe class="afford-calc" frameborder="0"
+    <iframe class="afford-calc" frameborder="0" loading="lazy"
         src="https://www.ooba.co.za/calculators/affordability-calculator?iframe=true&iftype=evogroup"
         title="Affordability Calculator"></iframe>
 </div>

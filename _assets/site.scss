@@ -52,7 +52,7 @@ $input-height: calc(#{$input-height-inner} + #{$input-height-border});
 body {
     overflow-x: hidden;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    webkit-tap-highlight-color: $primary;
+    -webkit-tap-highlight-color: $primary;
 }
 
 .bg-newgray {

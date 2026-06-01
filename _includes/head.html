@@ -7,9 +7,10 @@
   {% assign document_title = site.title %}
 {% endif %}
 {% assign meta_description = page.description | default: site.description %}
+{% assign seo_url = site.production_url | default: site.url %}
 {% assign canonical_path = page.url | replace:'index.html','' | relative_url %}
-{% assign canonical_url = canonical_path | prepend: site.url %}
-{% assign social_image = "/social_916x509.jpg" | prepend: site.url %}
+{% assign canonical_url = canonical_path | prepend: seo_url %}
+{% assign social_image = "/social_916x509.jpg" | prepend: seo_url %}
 {% assign robots = page.robots | default: "index, follow" %}
 {% if site.analytics.google and site.analytics.google != "G-XXX" %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -51,11 +52,11 @@
 
   <meta name="author" content="{{ site.author | escape }}">
   <link rel="canonical" href="{{ canonical_url }}">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.url }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: seo_url }}">
 
   <title>{{ document_title | escape }}</title>
 
-  <link rel="icon" href="{{ "/favicon.png" | prepend: site.url }}" type="image/png">
+  <link rel="icon" href="{{ "/favicon.png" | prepend: seo_url }}" type="image/png">
   <link rel="stylesheet" href="{{ "/assets/bundle.css" | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,10 +66,10 @@
   {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "@id": "{{ site.url }}/#business",
+    "@id": "{{ seo_url }}/#business",
     "name": "{{ site.company | default: site.title | escape }}",
-    "url": "{{ site.url }}/",
-    "logo": "{{ site.logo.path | prepend: site.url }}",
+    "url": "{{ seo_url }}/",
+    "logo": "{{ site.logo.path | prepend: seo_url }}",
     "image": "{{ social_image }}",
     "description": "{{ site.description | strip_html | normalize_whitespace | escape }}",
     "areaServed": {

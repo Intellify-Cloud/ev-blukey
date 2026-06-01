@@ -7,7 +7,7 @@ background: white
 ---
 
 <div>
-    <iframe class="additional-payment-calc" frameborder="0"
+    <iframe class="additional-payment-calc" frameborder="0" loading="lazy"
         src="https://www.ooba.co.za/calculators/additional-home-loan-repayment-calculator?iframe=true&iftype=evogroup"
         title="Extra Repayment Calculator"></iframe>
 </div>

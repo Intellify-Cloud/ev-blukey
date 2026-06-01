@@ -11,9 +11,6 @@ collections:
 
 markdown: kramdown
 
-plugins:
-  - jekyll-sitemap
-
 webserver_headers:
   - - Access-Control-Allow-Origin
     - "*"
@@ -23,12 +20,13 @@ webserver_headers:
 logo:
   path: /assets/img/logo/blue-key-home-finance-logo.jpg
 
-exclude: [node_modules, webpack-config.js, package.json, package-lock.json]
+exclude: [node_modules, webpack.config.js, package.json, package-lock.json]
 
 group: Blue Key Home Finance
 
 company: Blue Key Home Finance
 
 url: https://www.bluekeyhomefinance.co.za
+production_url: https://www.bluekeyhomefinance.co.za
 
 address: 

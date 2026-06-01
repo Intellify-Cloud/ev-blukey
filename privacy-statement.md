@@ -109,7 +109,7 @@ You agree that we may transfer your personal information outside South Africa:
 We will take reasonable steps to ensure that any country, company or person that we pass your personal information to, agrees or is obliged by law to treat your information with the same level of protection as required by the laws of South Africa.
 
 #### Changing this Privacy Statement 
-We may change this Privacy Statement at any time. The most updated version will always be available on {{ site.url }}.
+We may change this Privacy Statement at any time. The most updated version will always be available on {{ site.production_url }}.
 
 If you have any concerns 
 If you believe that we have used your personal information contrary to this Privacy Statement, you must first attempt to resolve any concerns with us. You can do this by contacting the Information Officer at the following email address: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.

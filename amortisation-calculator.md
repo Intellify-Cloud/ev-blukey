@@ -7,7 +7,7 @@ background: white
 ---
 
 <div>
-    <iframe class="amortisation-calc" frameborder="0"
+    <iframe class="amortisation-calc" frameborder="0" loading="lazy"
         src="https://www.ooba.co.za/calculators/home-loan-amortisation-calculator?iframe=true&iftype=evogroup"
         title="Amortisation Calculator"></iframe>
 </div>

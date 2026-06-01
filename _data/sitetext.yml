@@ -10,7 +10,7 @@ expert:
 
 services:
   title: "Services We Offer"
-  text: "We get you the best deal on your Home Loan by sourcing quotes from all the leading banks (including your own bank) for you to compare."
+  text: "We get you the best deal on your home loan by sourcing quotes from all the leading banks (including your own bank) for you to compare."
   section: services
   list:
     - title: "Pre-qualification"
@@ -39,7 +39,7 @@ articles:
 
 calculators:
   title: "Home Loan Calculators"
-  text: "Use our Home loan Calculators to work out the size of home loan you are likely to qualify for and what your bond repayments will be."
+  text: "Use our home loan calculators to work out the size of home loan you are likely to qualify for and what your bond repayments will be."
   section: calculators
   list:
     - title: "Bond Calculator"
@@ -163,7 +163,7 @@ clients:
 team:
   title: "Contact Us"
   text: We would love to hear from you and assist you in your home buying journey.
-  # subtext: Text Below the Images, also Markdown is suppoted **Bold Text Allowed**
+  # subtext: Text below the images, Markdown is supported **Bold Text Allowed**
   section: team
   contact:
   people:

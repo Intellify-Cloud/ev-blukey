@@ -18,7 +18,7 @@
 
         <div class="card">
           <div class="card-body text-center">
-            <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
+            <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}" loading="lazy" decoding="async">
             <h4 class="card-title service-heading">{{ post.title | markdownify }}</h4>
             <div class="text-muted">{{ post.excerpt | markdownify }}</div>
             {{ post.category}}

@@ -30,7 +30,7 @@ After contacting any 3rd Party, {{ site.company }} will only further process per
 #### {{ site.company }} commitment to privacy and POPIA compliance 
 {{ site.company }} is committed to protecting all data subjects right to privacy. 
 
-As our valued Business Partner, we want you to have the assurance that when you engage with {{ site.company }}, you can trust that any 3rd Party’s personal information shared with us will be treated subject to the {{ site.company }} Privacy Policy (a copy of which can be found on {{ site.url }}), as well as the requirements of POPIA.  
+As our valued Business Partner, we want you to have the assurance that when you engage with {{ site.company }}, you can trust that any 3rd Party’s personal information shared with us will be treated subject to the {{ site.company }} Privacy Policy (a copy of which can be found on {{ site.production_url }}), as well as the requirements of POPIA.
 
 You should only share 3rd Party personal information with us if you have the 3rd Party’s consent or are otherwise entitled to share such information, by reason of a processing justification under POPIA or any other reason.  You should only share such information as is necessary and you should inform the 3rd Party that you have shared the information with us.  Should the 3rd Party withdraw their consent given to you, you should notify us thereof as soon as possible.
 In your privacy notices with your customers (whose information you might share with {{ site.company }}), you should inform them that any such sharing of personal information with {{ site.company }} will be subject to this Data Sharing Agreement and {{ site.company }} Privacy Policy and specifically that:
@@ -90,6 +90,6 @@ The following are examples of laws that require us to collect and keep personal 
 We will take reasonable steps to ensure that any country, company or person that to which we pass personal information (for example, for the use of cloud services) agrees or is obliged by law in that jurisdiction to treat personal information with the same level of protection as required by the laws of South Africa.
 
 #### Changing this Data Sharing Agreement 
-We may change this Data Sharing Agreement at any time. The most updated version will always be available on {{ site.url }} and will be effective only from publication on our website.
+We may change this Data Sharing Agreement at any time. The most updated version will always be available on {{ site.production_url }} and will be effective only from publication on our website.
 
 

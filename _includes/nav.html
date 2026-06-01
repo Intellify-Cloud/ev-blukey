@@ -2,7 +2,7 @@
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/">
       {%- if site.logo -%}
-      <img src="{{ site.logo.path }}" alt="{{ site.company | default: site.title }}">
+      <img src="{{ site.logo.path }}" alt="{{ site.company | default: site.title }}" decoding="async">
       {%- else -%}
       {{ site.title }}
       {%- endif -%}
