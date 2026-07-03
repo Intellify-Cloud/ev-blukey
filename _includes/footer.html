@@ -2,40 +2,70 @@
 <!-- Footer -->
 {% assign footer = site.data.sitetext.footer %}
 <footer class="footer" id="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <!-- Copyright -->
-      <div class="footer-section">
-        <p class="copyright">Copyright &copy; {{ site.company }} {{ 'now' | date: "%Y" }}</p>
-      </div>
-      
-      <!-- Social Media -->
-      <div class="footer-section footer-section--center">
-        <ul class="social-buttons">
+  <div class="footer-main container">
+    <div class="footer-brand">
+      <a class="footer-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.company }} home">
+        <img src="{{ footer.logo | default: site.logo.path | relative_url }}" alt="{{ site.company }}" loading="lazy" decoding="async">
+      </a>
+      {% if footer.description %}
+      <p class="footer-description">{{ footer.description }}</p>
+      {% endif %}
+
+      {% if footer.social %}
+      <nav class="footer-social" aria-label="{{ footer.social_label | default: 'Social links' }}">
+        <ul>
           {% for link in footer.social %}
-          <li class="social-item">
-            {% if link.url %}
-            <a href="{{ link.url }}" class="social-link" target="_blank" rel="noopener noreferrer">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+          <li>
+            <a href="{{ link.url }}" target="_blank" rel="noopener" aria-label="{{ link.title | default: footer.social_label }}">
+              {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %}
             </a>
-            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+    </div>
+
+    {% if footer.sections %}
+    <nav class="footer-navigation" aria-label="Footer navigation">
+      {% for section in footer.sections %}
+      <div class="footer-column">
+        <h2>{{ section.title }}</h2>
+        <ul>
+          {% for link in section.links %}
+          <li>
+            <a{% if link.class %} class="{{ link.class }}"{% endif %} href="{% if link.external %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"{% if link.new_tab %} target="_blank" rel="noopener"{% endif %}>{{ link.text }}</a>
           </li>
           {% endfor %}
         </ul>
       </div>
+      {% endfor %}
+    </nav>
+    {% endif %}
+  </div>
 
-      <!-- Legal -->
-      <div class="footer-section footer-section--end">
-        <ul class="quicklinks">
-                      {% if footer.legal %}
-              <li class="list-inline-item">
-                <a href="{{ footer.legal_url | default: '#' }}" target="_blank" rel="noopener noreferrer" style="color: black;">
-                  {{ footer.legal }}
-                </a>
-              </li>
-              {% endif %}
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p class="footer-copyright">{{ footer.copyright_prefix | default: 'Copyright' }} &copy; {{ 'now' | date: "%Y" }} {{ site.company }}</p>
+
+      {% if footer.legal %}
+      <nav class="footer-legal" aria-label="Legal">
+        <ul>
+          {% for link in footer.legal %}
+          <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"{% if link.new_tab %} target="_blank" rel="noopener"{% endif %}>{{ link.text }}</a></li>
+          {% endfor %}
         </ul>
+      </nav>
+      {% endif %}
+
+      {% if footer.credits %}
+      <div class="footer-credits">
+        {% for credit in footer.credits %}
+        <a href="{% if credit.external %}{{ credit.url }}{% else %}{{ credit.url | relative_url }}{% endif %}"{% if credit.new_tab %} target="_blank" rel="noopener"{% endif %}>{{ credit.text }}</a>
+        {% unless forloop.last %}<span aria-hidden="true">&middot;</span>{% endunless %}
+        {% endfor %}
       </div>
+      {% endif %}
     </div>
   </div>
 </footer>

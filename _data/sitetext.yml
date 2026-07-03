@@ -209,17 +209,68 @@ contact:
   section: team
 
 footer:
-  legal: "Powered by evo Home Loans"
-  legal_url: https://evohomeloans.co.za
+  copyright_prefix: "Copyright"
+  logo: /assets/img/logo/blue-key-home-finance-logo-dark.png
+  description: "Independent home loan guidance, bank comparisons, and personal support for buyers across South Africa."
+  social_label: "Follow Blue Key Home Finance"
+  sections:
+    - title: "Explore"
+      links:
+        - text: "Home"
+          url: /
+        - text: "Services"
+          url: /#services
+        - text: "Calculators"
+          url: /#calculators
+        - text: "Testimonials"
+          url: /#testimonials
+    - title: "Resources"
+      links:
+        - text: "Affordability Calculator"
+          url: /affordability-calculator/
+        - text: "Bond Calculator"
+          url: /bond-calculator/
+        - text: "Transfer Cost Calculator"
+          url: /transfer-cost-calculator/
+    - title: "Get in touch"
+      links:
+        - text: "+27 82 519 0947"
+          url: "tel:+27825190947"
+          external: true
+        - text: "bluekeyfinance@evogroup.co.za"
+          url: "mailto:bluekeyfinance@evogroup.co.za?subject=Blue Key Home Finance Website Enquiry"
+          external: true
+          class: "footer-link--nowrap"
+        - text: "Contact us"
+          url: /contact/
+  legal:
+    - text: "Privacy Statement"
+      url: /privacy-statement/
+    - text: "Legal"
+      url: /legal/
+    - text: "Data Sharing Agreement"
+      url: /data-sharing-agreement/
+  credits:
+    - text: "Powered by evo Home Loans"
+      url: https://evohomeloans.co.za
+      external: true
+      new_tab: true
+    - text: "Website by Intellify"
+      url: https://intellify.co.za
+      external: true
+      new_tab: true
   whatsapp:
     url: https://api.whatsapp.com/send?phone=27825190947
     text: Chat
   social:
-    - url: https://www.instagram.com/bluekeyhomefinancepoweredbyevo/
+    - title: "Instagram"
+      url: https://www.instagram.com/bluekeyhomefinancepoweredbyevo/
       icon: "fab fa-instagram"  
-    - url: https://www.facebook.com/profile.php?id=61580109487431
+    - title: "Facebook"
+      url: https://www.facebook.com/profile.php?id=61580109487431
       icon: "fab fa-facebook-f"
-    - url: https://www.linkedin.com/company/blue-key-home-finance-%E2%80%93-powered-by-evo/
+    - title: "LinkedIn"
+      url: https://www.linkedin.com/company/blue-key-home-finance-%E2%80%93-powered-by-evo/
       icon: "fab fa-linkedin-in"
       #- url: https://example.com/chat
       #  icon: "fab fa-comment"
