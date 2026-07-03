@@ -8,3 +8,13 @@ _site
 Gemfile.lock
 unused
 bootstrap-reference.html
+
+# Webpack build outputs live in assets/. Existing tracked files stay tracked
+# for static hosting, but new generated hashes should not be committed by accident.
+assets/bundle.css
+assets/bundle.js
+assets/bundle.js.LICENSE.txt
+assets/generated/
+
+# Local/private project notes for Codex or maintainers.
+_private_docs/

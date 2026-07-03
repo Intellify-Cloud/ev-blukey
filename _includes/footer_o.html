@@ -1,4 +1,5 @@
   <!-- Footer -->
+  {% assign footer = site.data.sitetext.footer %}
   <footer class="footer" id="footer" style="background-color:white;">
     <div class="container">
       <div class="row align-items-center">
@@ -9,7 +10,7 @@
 		<!-- Social Media -->
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
-		  {% for link in site.data.sitetext.footer.social  %}
+		  {% for link in footer.social  %}
             <li class="list-inline-item">
 			  {% if link.url %}
               <a href="{{ link.url }}">
@@ -28,7 +29,7 @@
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
-              <a href="https://evohomeloans.co.za" target="_blank">{{ site.data.sitetext.footer.legal | default: "" }}</a>
+              <a href="{{ footer.legal_url | default: '#' }}" target="_blank" rel="noopener noreferrer">{{ footer.legal | default: "" }}</a>
             </li>
           </ul>
         </div>
@@ -51,7 +52,7 @@ function fixPageShort() {
 {% endif %}
 
 <!-- <div class="whatsapp">
-  <a href="https://api.whatsapp.com/send?phone=27795620507" target="_blank">    
+  <a href="{{ footer.whatsapp.url }}" target="_blank" rel="noopener noreferrer">
   <h4><i class="fab fa-whatsapp fa-2x " aria-hidden="true" ></i></h4>Chat  </a>
 </div> -->
 

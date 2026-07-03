@@ -1,13 +1,14 @@
 <!-- team.html -->
-<section class="team-section" id="{{ site.data.sitetext.team.section | default: 'team' }}">
+{% assign section = site.data.sitetext.team %}
+<section class="team-section" id="{{ section.section | default: 'team' }}">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-heading">{{ site.data.sitetext.team.title }}</h2>
-        <p class="section-subtitle">{{ site.data.sitetext.team.text }}</p>
+        <h2 class="section-heading">{{ section.title }}</h2>
+        <p class="section-subtitle">{{ section.text }}</p>
         
         <div class="team-container">
-          {% for person in site.data.sitetext.team.people %}
+          {% for person in section.people %}
           <div class="team-member">
             <div class="member-image">
               <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy" decoding="async">
@@ -36,9 +37,9 @@
           {% endfor %}
         </div>
         
-        {% if site.data.sitetext.team.subtext %}
+        {% if section.subtext %}
         <div class="text-center mt-5">
-          <div class="team-subtext">{{ site.data.sitetext.team.subtext | markdownify }}</div>
+          <div class="team-subtext">{{ section.subtext | markdownify }}</div>
         </div>
         {% endif %}
       </div>

@@ -1,15 +1,16 @@
-<section class="page-section py-5 position-relative" id="clients">
+{% assign section = site.data.sitetext.clients %}
+<section class="page-section py-5 position-relative" id="{{ section.section | default: 'clients' }}">
   <div class="container">
     
     <!-- Top Heading -->
     <div class="row">
       <div class="col-12 text-center">
         <h2 class="section-heading">
-          {{ site.data.sitetext.clients.title | default: "We work with all the leading banks" }}
+          {{ section.title | default: "Partners" }}
         </h2>
-        {% if site.data.sitetext.clients.text %}
+        {% if section.text %}
         <p class="section-subheading text-muted">
-          {{ site.data.sitetext.clients.text }}
+          {{ section.text }}
         </p>
         {% endif %}
       </div>
@@ -17,7 +18,7 @@
 
     <!-- Client Logos -->
     <div class="row justify-content-center mt-4 flex-wrap gap-3">
-      {% for client in site.data.sitetext.clients.list %}
+      {% for client in section.list %}
       <div class="client-logo-card d-flex align-items-center justify-content-center">
         <a href="{{ client.url | default: '#' }}" target="_blank" rel="noopener noreferrer">
           <img class="img-fluid" src="{{ client.logo }}" alt="{{ client.title }}" loading="lazy" decoding="async">

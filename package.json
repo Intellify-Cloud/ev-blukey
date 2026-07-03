@@ -1,13 +1,16 @@
 {
-  "name": "intellify",
+  "name": "blue-key-home-finance",
   "version": "1.0.0",
-  "description": "Get online. Grow online. Intellify your business to reach new heights.",
+  "description": "Static Jekyll site for Blue Key Home Finance.",
   "scripts": {
     "bundle": "webpack",
-    "serve": "jekyll serve --baseurl ''",
-    "trace": "jekyll serve --trace --baseurl ''"
+    "build": "npm run bundle && bundle exec jekyll build --trace --baseurl \"\"",
+    "check": "npm run build",
+    "serve": "jekyll serve --baseurl \"\"",
+    "dev": "npm run bundle && npm run serve",
+    "trace": "jekyll serve --trace --baseurl \"\""
   },
-  "author": "Intellify-Cloud",
+  "author": "Blue Key Home Finance",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",

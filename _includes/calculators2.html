@@ -1,13 +1,14 @@
 <!-- More Calculators -->
-<section class="calculators" id="{{ site.data.sitetext.more-calculators.section | default: 'calculators2' }}">
+{% assign section = site.data.sitetext.more-calculators %}
+<section class="calculators" id="{{ section.section | default: 'calculators2' }}">
   <div class="container">
-    <h2 class="main-title">{{ site.data.sitetext.more-calculators.title | default: "MORE CALCULATORS" }}</h2>
-    {% if site.data.sitetext.more-calculators.text %}
-      <p class="subtitle">{{ site.data.sitetext.more-calculators.text }}</p>
+    <h2 class="main-title">{{ section.title | default: "More Calculators" }}</h2>
+    {% if section.text %}
+      <p class="subtitle">{{ section.text }}</p>
     {% endif %}
     
     <div class="calculators-grid">
-      {% for service in site.data.sitetext.more-calculators.list %}
+      {% for service in section.list %}
         <div class="calculators-card">
           <div class="calculators-icon">
             <i class="{{ service.icon | default: 'fas fa-shopping-cart' }}"></i>

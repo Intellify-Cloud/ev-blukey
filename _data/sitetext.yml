@@ -1,6 +1,10 @@
 header:
   title: "Secure Your Home Loan with Confidence"
   text: "Fast approvals, trusted advice, and the best deals for your bond."
+  section: hero
+  cta:
+    text: "Get Started Today"
+    url: "#services"
 
 expert:
   title: "Get pre-approved for a home loan today"
@@ -92,15 +96,15 @@ textblock:
   footer: "**OUR SERVICE IS FREE WITH NO OBLIGATION OR COST TO YOU!**"
   section: textblock
   list:
-      - title: "<strong>Step 1: Plan & Pre-Approval</strong> – Start with a clear strategy. We answer all your questions and get you a pre-approval."
+      - title: "<strong>Step 1: Plan & Pre-Approval</strong> - Start with a clear strategy. We answer all your questions and get you a pre-approval."
         image: "fas fa-circle"
-      - title: "<strong>Step 2: Make Your Move</strong> – Find your home and sign the Offer to Purchase with confidence."
+      - title: "<strong>Step 2: Make Your Move</strong> - Find your home and sign the Offer to Purchase with confidence."
         image: "fas fa-circle"
-      - title: "<strong>Step 3: Securing Your Loan</strong> – We efficiently gather your final documentation for a strong application."
+      - title: "<strong>Step 3: Securing Your Loan</strong> - We efficiently gather your final documentation for a strong application."
         image: "fas fa-circle"
-      - title: "<strong>Step 4: Strategic Application</strong> – We apply to our panel of lenders, including your bank, to create competition."
+      - title: "<strong>Step 4: Strategic Application</strong> - We apply to our panel of lenders, including your bank, to create competition."
         image: "fas fa-circle"
-      - title: "<strong>Step 5: Select & Secure</strong> – You choose the winning offer, empowered with clarity and expert advice."
+      - title: "<strong>Step 5: Select & Secure</strong> - You choose the winning offer, empowered with clarity and expert advice."
         image: "fas fa-circle"
       - title: "<strong>Step 6: Move Forward</strong> - Your selected lender starts the bond registration process."
         image: "fas fa-circle"
@@ -206,6 +210,10 @@ contact:
 
 footer:
   legal: "Powered by evo Home Loans"
+  legal_url: https://evohomeloans.co.za
+  whatsapp:
+    url: https://api.whatsapp.com/send?phone=27825190947
+    text: Chat
   social:
     - url: https://www.instagram.com/bluekeyhomefinancepoweredbyevo/
       icon: "fab fa-instagram"  
@@ -213,7 +221,7 @@ footer:
       icon: "fab fa-facebook-f"
     - url: https://www.linkedin.com/company/blue-key-home-finance-%E2%80%93-powered-by-evo/
       icon: "fab fa-linkedin-in"
-      #- url: https://api.whatsapp.com/send?phone=27795620507
-      #  icon: "fab fa-whatsapp"
+      #- url: https://example.com/chat
+      #  icon: "fab fa-comment"
       # - url: https://instagram.com
       #   icon: "fab fa-instagram"

@@ -66,4 +66,22 @@ $(function () {
         $("html, body").animate({ scrollTop: 0 }, 800, "easeInOutExpo");
     });
 
+    function fixShortPageFooter() {
+        var footer = document.getElementById("footer");
+        var pageContainer = document.getElementById("pagecontainer");
+
+        if (!footer || !pageContainer) {
+            return;
+        }
+
+        if (window.innerHeight > document.body.offsetHeight) {
+            footer.classList.add("footer--fixed");
+        } else {
+            footer.classList.remove("footer--fixed");
+        }
+    }
+
+    fixShortPageFooter();
+    window.addEventListener("resize", fixShortPageFooter);
+
 });

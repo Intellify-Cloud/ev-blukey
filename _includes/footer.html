@@ -1,5 +1,6 @@
 
 <!-- Footer -->
+{% assign footer = site.data.sitetext.footer %}
 <footer class="footer" id="footer">
   <div class="container">
     <div class="footer-grid">
@@ -11,7 +12,7 @@
       <!-- Social Media -->
       <div class="footer-section footer-section--center">
         <ul class="social-buttons">
-          {% for link in site.data.sitetext.footer.social %}
+          {% for link in footer.social %}
           <li class="social-item">
             {% if link.url %}
             <a href="{{ link.url }}" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -26,10 +27,10 @@
       <!-- Legal -->
       <div class="footer-section footer-section--end">
         <ul class="quicklinks">
-                      {% if site.data.sitetext.footer.legal %}
+                      {% if footer.legal %}
               <li class="list-inline-item">
-                <a href="https://evohomeloans.co.za" target="_blank" style="color: black;">
-                  {{ site.data.sitetext.footer.legal }}
+                <a href="{{ footer.legal_url | default: '#' }}" target="_blank" rel="noopener noreferrer" style="color: black;">
+                  {{ footer.legal }}
                 </a>
               </li>
               {% endif %}
@@ -39,26 +40,12 @@
   </div>
 </footer>
 
-{% if page.layout == "page" %}
-<script>
-  const fixPageShort = () => {
-    const footer = document.getElementById("footer");
-    if (window.innerHeight > document.body.offsetHeight) {
-      footer.classList.add("footer--fixed");
-    } else {
-      footer.classList.remove("footer--fixed");
-    }
-  };
-
-  fixPageShort();
-  window.addEventListener('resize', fixPageShort);
-</script>
-{% endif %}
-
 <!-- WhatsApp Float Button -->
+{% if footer.whatsapp %}
 <div class="whatsapp-float">
-  <a href="https://api.whatsapp.com/send?phone=27825190947" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+  <a href="{{ footer.whatsapp.url }}" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-text">Chat</span>
+    <span class="whatsapp-text">{{ footer.whatsapp.text | default: "Chat" }}</span>
   </a>
 </div>
+{% endif %}

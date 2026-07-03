@@ -1,21 +1,22 @@
 <!-- Services -->
-  <section class="page-section py-5" id="{{ site.data.sitetext.services.section | default: "services" }}">
+  {% assign section = site.data.sitetext.services %}
+  <section class="page-section py-5" id="{{ section.section | default: "services" }}">
     <div class="container">
 	
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.services.title | default: "Services We Offer" }}</h2>
+          <h2 class="section-heading text-uppercase">{{ section.title | default: "Services We Offer" }}</h2>
 
-          {% if site.data.sitetext.services.text %}
+          {% if section.text %}
           
-		  <h3 class="section-subheading text-muted">{{ site.data.sitetext.services.text }}</h3>
+		  <h3 class="section-subheading text-muted">{{ section.text }}</h3>
 		  {% endif %}
         </div>
       </div>
 	  
       <div class="card-deck services">
         
-	  {% for service in site.data.sitetext.services.list %}
+	  {% for service in section.list %}
         <div class="card">
           <div class="card-body text-center">
             <!-- <span class="fa-stack fa-3x">
