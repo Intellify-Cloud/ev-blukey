@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Data Sharing
+title: Data Sharing Agreement
 description: "Read the Blue Key Home Finance data sharing agreement and how shared personal information is handled."
 permalink: /data-sharing-agreement/
 background: grey
 ---
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Our Data Sharing Agreement</h2>
+	<h1 class="section-heading text-uppercase">Our Data Sharing Agreement</h1>
 </div>
 
 

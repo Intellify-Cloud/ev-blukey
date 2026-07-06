@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact Blue Key Home Finance
+title: Contact Us
 description: "Contact Blue Key Home Finance for home loan guidance, bond origination support, and property finance advice."
 permalink: /contact/
 background: gray

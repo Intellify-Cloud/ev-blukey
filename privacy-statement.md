@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Privacy Policy
+title: Privacy Statement
 description: "Read the Blue Key Home Finance privacy statement, including definitions and personal information processing terms."
 permalink: /privacy-statement/
 background: grey
 ---
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Our Privacy Statement</h2>
+	<h1 class="section-heading text-uppercase">Our Privacy Statement</h1>
 </div>
 
 

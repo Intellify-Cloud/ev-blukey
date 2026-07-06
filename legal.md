@@ -6,7 +6,7 @@ permalink: /legal/
 background: grey
 ---
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Privacy Policy</h2>
+	<h1 class="section-heading text-uppercase">Privacy Policy</h1>
 </div>
 
 This Privacy Policy describes how your personal information is collected, used, and shared when you visit {{ site.title }} (the “Site”).
