@@ -171,16 +171,16 @@ team:
   section: team
   contact:
   people:
-    - name: "Amanda Strydom"
+    - name: "Linda Katzenellenbogen"
       role: "Property Finance Specialist"
-      image: assets/img/team/Amanda-Strydom-Blue Key Home Finance.jpg
+      image: assets/img/team/Bond-Consultant-Blue Key Home Finance.png
       social:
         - url: tel:+27825190947
           icon: fas fa-phone
-        - url: mailto:bluekeyfinance@evogroup.co.za?subject=Blue Key Home Finance Website Enquiry
+        - url: mailto:bluekeyfinance@evogroup.co.za?subject=Blue%20Key%20Home%20Finance%20Website%20Enquiry
           icon: fas fa-envelope
-        - url: https://www.facebook.com/profile.php?id=61580109487431
-          icon: fab fa-facebook-f
+        - url: https://www.bluekeyhomefinance.co.za
+          icon: fas fa-globe
 
 testimonials:
   title: "Testimonials"

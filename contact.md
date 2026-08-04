@@ -6,6 +6,16 @@ permalink: /contact/
 background: gray
 ---
 
+{% assign team_member = site.data.sitetext.team.people.first %}
+{% assign phone_link = team_member.social | where: "icon", "fas fa-phone" | first %}
+{% assign email_link = team_member.social | where: "icon", "fas fa-envelope" | first %}
+{% assign phone_number = phone_link.url | remove: "tel:" %}
+{% assign display_phone = phone_number | replace: "+27", "0" | replace: "825190947", "82 519 0947" %}
+{% assign whatsapp_url = site.data.sitetext.footer.whatsapp.url | default: phone_link.url %}
+{% assign email_url = email_link.url %}
+{% unless email_url %}{% assign email_url = site.email | prepend: "mailto:" %}{% endunless %}
+{% assign display_email = email_url | remove: "mailto:" | split: "?" | first %}
+
 <section class="contact-page" aria-labelledby="contact-title">
   <div class="contact-page__heading text-center">
     <span class="contact-page__eyebrow">Let’s talk home finance</span>
@@ -42,26 +52,26 @@ background: gray
 
     <article class="contact-card contact-card--person">
       <div class="contact-person">
-        <img src="{{ '/assets/img/team/Amanda-Strydom-Blue Key Home Finance.jpg' | relative_url }}" alt="Amanda Strydom, Property Finance Specialist" loading="lazy" decoding="async">
+        <img src="{{ team_member.image | relative_url }}" alt="{{ team_member.name }}, {{ team_member.role }}" loading="lazy" decoding="async">
         <div>
           <span class="contact-card__badge">Your finance specialist</span>
-          <h2>Amanda Strydom</h2>
+          <h2>{{ team_member.name }}</h2>
           <p>Personal guidance from your first affordability question to the final bank offer.</p>
         </div>
       </div>
 
-      <div class="contact-actions" aria-label="Contact Amanda Strydom">
-        <a class="contact-action" href="tel:+27825190947">
+      <div class="contact-actions" aria-label="Contact {{ team_member.name }}">
+        <a class="contact-action" href="{{ phone_link.url }}">
           <span class="contact-action__icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
-          <span><small>Call Amanda</small><strong>082 519 0947</strong></span>
+          <span><small>Call {{ team_member.name | split: " " | first }}</small><strong>{{ display_phone }}</strong></span>
         </a>
-        <a class="contact-action" href="https://wa.me/27825190947" target="_blank" rel="noopener">
+        <a class="contact-action" href="{{ whatsapp_url }}" target="_blank" rel="noopener">
           <span class="contact-action__icon contact-action__icon--whatsapp" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
           <span><small>Send a WhatsApp</small><strong>Start a conversation</strong></span>
         </a>
-        <a class="contact-action" href="mailto:bluekeyfinance@evogroup.co.za?subject=Blue Key Home Finance Website Enquiry">
+        <a class="contact-action" href="{{ email_url }}">
           <span class="contact-action__icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
-          <span><small>Email us</small><strong>bluekeyfinance@evogroup.co.za</strong></span>
+          <span><small>Email us</small><strong>{{ display_email }}</strong></span>
         </a>
       </div>
     </article>
