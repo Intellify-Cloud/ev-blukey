@@ -263,15 +263,15 @@ footer:
     url: https://api.whatsapp.com/send?phone=27825190947
     text: Chat
   social:
-    - title: "Instagram"
-      url: https://www.instagram.com/bluekeyhomefinancepoweredbyevo/
-      icon: "fab fa-instagram"  
-    - title: "Facebook"
-      url: https://www.facebook.com/profile.php?id=61580109487431
-      icon: "fab fa-facebook-f"
     - title: "LinkedIn"
       url: https://www.linkedin.com/company/blue-key-home-finance-%E2%80%93-powered-by-evo/
       icon: "fab fa-linkedin-in"
+    - title: "Instagram"
+      url: https://www.instagram.com/bluekeyhomefinancepoweredbyevo?igsh=MW1lbm9kaWRlYTk5bQ==
+      icon: "fab fa-instagram"
+    - title: "Facebook"
+      url: https://www.facebook.com/share/1VHAEBDuLP/?mibextid=wwXIfr
+      icon: "fab fa-facebook-f"
       #- url: https://example.com/chat
       #  icon: "fab fa-comment"
       # - url: https://instagram.com
