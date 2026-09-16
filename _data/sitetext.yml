@@ -171,9 +171,9 @@ team:
   section: team
   contact:
   people:
-    - name: "Linda Katzenellenbogen"
+    - name: "Renata M."
       role: "Property Finance Specialist"
-      image: assets/img/team/Bond-Consultant-Blue Key Home Finance.png
+      image: "assets/img/team/Bond-Consultant-Blue Key Home Finance_o.png"
       social:
         - url: tel:+27825190947
           icon: fas fa-phone
