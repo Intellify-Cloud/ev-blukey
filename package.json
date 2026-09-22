@@ -8,13 +8,17 @@
     "check": "npm run build",
     "serve": "jekyll serve --baseurl \"\"",
     "dev": "npm run bundle && npm run serve",
-    "trace": "jekyll serve --trace --baseurl \"\""
+    "trace": "jekyll serve --trace --baseurl \"\"",
+    "watch:bundle": "webpack --watch --mode development",
+    "watch:jekyll": "bundle exec jekyll serve --livereload --baseurl \"\"",
+    "watch": "concurrently -n webpack,jekyll -c blue,green \"npm:watch:bundle\" \"npm:watch:jekyll\""
   },
   "author": "Blue Key Home Finance",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",
+    "concurrently": "^10.0.5",
     "css-loader": "^7.1.4",
     "css-minimizer-webpack-plugin": "^8.0.0",
     "expose-loader": "^1.0.0",

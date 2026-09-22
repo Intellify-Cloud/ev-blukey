@@ -11,7 +11,7 @@
           {% for person in section.people %}
           <div class="team-member">
             <div class="member-image">
-              <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy" decoding="async">
+              <img src="{{ person.image }}?v={{ site.time | date: '%s' }}" alt="{{ person.name }}" loading="lazy" decoding="async">
             </div>
             
             <div class="member-body">

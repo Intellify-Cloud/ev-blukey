@@ -16,7 +16,7 @@
         <div class="col-md-3 col-sm-6 " style="height: 100px;">
         <!-- <a href="{{ client.url }}" class="h-  100"> -->
           
-          <img class="img-fluid d-block mx-auto align-self-center" src="{{ suburbs.image }}" alt="{{ suburbs.title }}"
+          <img class="img-fluid d-block mx-auto align-self-center" src="{{ suburbs.image }}?v={{ site.time | date: '%s' }}" alt="{{ suburbs.title }}"
             style="max-height: {{ site.data.sitetext.suburbs.max-height | default: "100px" }} ;  margin=300px "></a>
         </div>
       {% endfor %}

@@ -5,7 +5,7 @@
   <div class="footer-main container">
     <div class="footer-brand">
       <a class="footer-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.company }} home">
-        <img src="{{ footer.logo | default: site.logo.path | relative_url }}" alt="{{ site.company }}" loading="lazy" decoding="async">
+        <img src="{{ footer.logo | default: site.logo.path | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ site.company }}" loading="lazy" decoding="async">
       </a>
       {% if footer.description %}
       <p class="footer-description">{{ footer.description }}</p>

@@ -21,7 +21,7 @@
       {% for client in section.list %}
       <div class="client-logo-card d-flex align-items-center justify-content-center">
         <a href="{{ client.url | default: '#' }}" target="_blank" rel="noopener noreferrer">
-          <img class="img-fluid" src="{{ client.logo }}" alt="{{ client.title }}" loading="lazy" decoding="async">
+          <img class="img-fluid" src="{{ client.logo }}?v={{ site.time | date: '%s' }}" alt="{{ client.title }}" loading="lazy" decoding="async">
         </a>
       </div>
       {% endfor %}
