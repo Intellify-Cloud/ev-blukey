@@ -14,25 +14,27 @@
               <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy" decoding="async">
             </div>
             
-            <div class="member-info">
-              <h4>{{ person.name }}</h4>
-              <p class="member-role">{{ person.role }}</p>
-              {% if person.description %}
-              <p class="member-description">{{ person.description }}</p>
+            <div class="member-body">
+              <div class="member-info">
+                <h4>{{ person.name }}</h4>
+                <p class="member-role">{{ person.role }}</p>
+                {% if person.description %}
+                <p class="member-description">{{ person.description }}</p>
+                {% endif %}
+              </div>
+
+              {% if person.social %}
+              <div class="social-buttons">
+                {% for network in person.social %}
+                <a href="{{ network.url }}" target="_blank" rel="noopener noreferrer"
+                   class="{% if network.icon contains 'linkedin' %}linkedin{% elsif network.icon contains 'twitter' %}twitter{% elsif network.icon contains 'github' %}github{% elsif network.icon contains 'envelope' %}email{% endif %}"
+                   aria-label="{{ person.name }} {{ network.title | default: 'social profile' }}">
+                  <i class="{{ network.icon }}" aria-hidden="true"></i>
+                </a>
+                {% endfor %}
+              </div>
               {% endif %}
             </div>
-            
-            {% if person.social %}
-            <div class="social-buttons">
-              {% for network in person.social %}
-              <a href="{{ network.url }}" target="_blank" rel="noopener noreferrer" 
-                 class="{% if network.icon contains 'linkedin' %}linkedin{% elsif network.icon contains 'twitter' %}twitter{% elsif network.icon contains 'github' %}github{% elsif network.icon contains 'envelope' %}email{% endif %}"
-                 aria-label="{{ person.name }} {{ network.title | default: 'social profile' }}">
-                <i class="{{ network.icon }}" aria-hidden="true"></i>
-              </a>
-              {% endfor %}
-            </div>
-            {% endif %}
           </div>
           {% endfor %}
         </div>
