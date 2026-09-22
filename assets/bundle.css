@@ -14274,7 +14274,7 @@ h6 {
 }
 .calculators-desc, .calculator-desc, .calculators__desc {
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   margin-bottom: 2.5rem;
   flex-grow: 1;
   line-height: 1.5;
@@ -14963,7 +14963,7 @@ header.hero .intro-heading::after {
 header.hero .intro-lead-in {
   font-size: clamp(1rem, 3.5vw, 1.5rem);
   margin-bottom: 2rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -15016,7 +15016,7 @@ header.hero .scroll-indicator {
 #services .section-subtitle {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1.125rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   font-weight: 400;
   margin-bottom: 4rem;
   max-width: 600px;
@@ -15117,7 +15117,7 @@ header.hero .scroll-indicator {
 }
 #services .card .card-text, #services .card .service-description, #services .service-card .card-text, #services .service-card .service-description {
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -15401,7 +15401,7 @@ header.hero .scroll-indicator {
 .team-section .section-subtitle {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1.125rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   font-weight: 400;
   margin-bottom: 4rem;
   max-width: 600px;
@@ -15535,7 +15535,7 @@ header.hero .scroll-indicator {
 .team-member .member-info .member-description {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   line-height: 1.5;
   margin-bottom: 2.5rem;
   font-weight: 400;
@@ -15723,7 +15723,7 @@ header.hero .scroll-indicator {
 #testimonials .section-subtitle {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1.125rem;
-  color: #e0e0e0;
+  color: #f1f1f1;
   font-weight: 400;
   margin-bottom: 4rem;
   max-width: 600px;
@@ -15735,7 +15735,7 @@ header.hero .scroll-indicator {
   color: #ffffff;
 }
 #testimonials p {
-  color: #e0e0e0;
+  color: #f1f1f1;
 }
 #testimonials .testimonials-container {
   display: grid;
