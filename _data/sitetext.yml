@@ -171,9 +171,9 @@ team:
   section: team
   contact:
   people:
-    - name: "Renata M."
+    - name: "Michelle Marais"
       role: "Property Finance Specialist"
-      image: "assets/img/team/Bond-Consultant-Blue Key Home Finance_o.png"
+      image: "assets/img/team/Michelle-Marais-Blue Key Home Finance.jpg"
       social:
         - url: tel:+27825190947
           icon: fas fa-phone
